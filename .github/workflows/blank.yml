@@ -15,7 +15,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          date
+
+  deployment:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
