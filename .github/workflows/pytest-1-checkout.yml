@@ -1,4 +1,4 @@
-name: pytest
+name: pytest-1-checkout
 on: workflow_dispatch
 
 jobs:
