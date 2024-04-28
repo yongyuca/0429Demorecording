@@ -1,4 +1,4 @@
-name: pytest-1-checkout
+name: pytest-2-checkoutandfolder
 on: workflow_dispatch
 
 jobs:
