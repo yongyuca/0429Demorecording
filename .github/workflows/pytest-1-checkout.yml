@@ -13,7 +13,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4
         with:
-          repository: 'https://github.com/yongyuca/pytestdemo.git'
+          repository: 'yongyuca/pytestdemo'
           ref: main
 
       - name: install pytest
