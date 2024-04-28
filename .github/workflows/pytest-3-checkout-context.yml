@@ -25,8 +25,8 @@ jobs:
         run: pytest
       - name: Deployment Summary
         run: |
-          echo "Deploying to production server on branch ${{$GITHUB_REF}}"
-          echo "Deploying to production server on env ${{github.env}}"
-          echo "Deploying to production server on repo ${{github.repository}}"
-          echo "Deploying status to production server ${{job.status}}"
+          echo Deploying to production server on branch ${{$GITHUB_REF}}
+          echo Deploying to production server on env ${{github.env}}
+          echo Deploying to production server on repo ${{github.repository}}
+          echo Deploying status to production server ${{job.status}}
           echo ${{github.repo}}
