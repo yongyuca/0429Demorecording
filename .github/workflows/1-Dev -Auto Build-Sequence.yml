@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Dev -Auto Build
+name: 1-Dev -Auto Build-job sequence
 
 # Controls when the workflow will run
 on:
