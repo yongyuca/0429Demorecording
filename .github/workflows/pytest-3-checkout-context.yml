@@ -1,0 +1,31 @@
+name: pytest-3-checkout-context
+on: workflow_dispatch
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: pre - checkout
+        run: |
+          pwd
+          ls -lh
+      - name: checkout code
+        uses: actions/checkout@v4
+        with:
+          repository: "yongyuca/pytestdemo"
+          ref: main
+      - name: after checkout
+        run: |
+          pwd
+          ls -lh
+      - name: install pytest
+        run: pip install pytest
+      - name: run pytest
+        run: pytest
+      - name: Deployment Summary
+        run: |
+          echo "Deploying to production server on branch $GITHUB_REF"
+          echo "Deploying to production server on branch $github.env"
+          echo "Deploying to production server on branch $github.repository"
+          echo "Deploying to production server on branch $job.status"
